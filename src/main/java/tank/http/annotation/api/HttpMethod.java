@@ -8,5 +8,5 @@ package tank.http.annotation.api;
  */
 public enum HttpMethod {
 
-	GET, POST, HEAD, TRACE, PUT, DELETE, OPTIONS, CONNECT
+	GET, POST, HEAD, TRACE, PUT, DELETE, OPTIONS, CONNECT, DEFAULT
 }

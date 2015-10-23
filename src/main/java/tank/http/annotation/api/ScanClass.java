@@ -92,7 +92,8 @@ public class ScanClass {
 										String className = name.substring(packageName.length() + 1, name.length() - 6);
 										try {
 											// 添加到classes
-											classes.add(Class.forName(packageName + '.' + className));
+											//classes.add(Class.forName(packageName + '.' + className));
+											classes.add(Thread.currentThread().getContextClassLoader().loadClass(packageName + '.' + className));
 										} catch (ClassNotFoundException e) {
 											// log
 											// .error("添加用户自定义视图类错误 找不到此类的.class文件");

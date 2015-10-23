@@ -19,5 +19,7 @@ public @interface HttpRequestMapping {
 
 	String value() default "";
 
-	HttpMethod method();
+	HttpMethod method() default HttpMethod.DEFAULT;
+
+	String contextType() default "text/plain";
 }
